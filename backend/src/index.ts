@@ -95,13 +95,13 @@ const app = express();
 const server = createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:3000", "http://localhost:5173" , "https://web-rtc-five-iota.vercel.app"],
+    origin: ["http://localhost:3000", "http://localhost:5173" , "https://web-rtc-five-iota.vercel.app " , "https://web-rtc-testing-seven.vercel.app"],
     methods: ["GET", "POST"],
   },
 });
 
 app.use(cors({
-  origin: ["http://localhost:3000", "http://localhost:5173" , "https://web-rtc-five-iota.vercel.app"], // Allow multiple origins
+  origin: ["http://localhost:3000", "http://localhost:5173" , "https://web-rtc-five-iota.vercel.app" , "https://web-rtc-testing-seven.vercel.app"], // Allow multiple origins
   methods: ["GET", "POST"], // Specify allowed HTTP methods
   credentials: true, // If using cookies/sessions
 }));
